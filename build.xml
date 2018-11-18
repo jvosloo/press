@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project name="press" default="build" basedir=".">
-	<property file="build.properties" />
-    
+	
     <path id="project.classpath">
         <pathelement path="${play.path}/framework/classes"/>
         <fileset dir="${play.path}/framework/lib">
@@ -38,7 +37,7 @@
 
     <target name="compile">
         <mkdir dir="tmp/classes" />
-        <javac srcdir="app" destdir="tmp/classes" target="1.7" debug="true">
+        <javac srcdir="app" destdir="tmp/classes" target="1.8" debug="true">
             <classpath refid="project.classpath" />
         </javac>
     </target>
